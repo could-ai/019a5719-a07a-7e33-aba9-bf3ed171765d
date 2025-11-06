@@ -1,6 +1,6 @@
-# couldai_user_app
+# extreme_fire
 
-A new Flutter project.
+A gaming app named Extreme fire which is a game similar to free fire but advanced and realistic with an online action packed and a multi battle and multiplayer game.
 
 ## Getting Started
 
