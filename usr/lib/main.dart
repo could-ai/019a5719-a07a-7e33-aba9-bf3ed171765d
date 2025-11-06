@@ -1,3 +1,7 @@
+import 'package:extreme_fire/screens/character_selection_screen.dart';
+import 'package:extreme_fire/screens/multiplayer_screen.dart';
+import 'package:extreme_fire/screens/profile_screen.dart';
+import 'package:extreme_fire/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -70,28 +74,40 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 60),
               ElevatedButton(
                 onPressed: () {
-                  // Action for starting the game
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const CharacterSelectionScreen()),
+                  );
                 },
                 child: const Text('START GAME'),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Action for multiplayer mode
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MultiplayerScreen()),
+                  );
                 },
                 child: const Text('MULTIPLAYER'),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Action for settings
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                  );
                 },
                 child: const Text('SETTINGS'),
               ),
                const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Action for profile
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProfileScreen()),
+                  );
                 },
                 child: const Text('PROFILE'),
               ),
